@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url(); */
+    background: black;
+}
+
+.solarSystem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sun, .sun2 {
+    width: 200px;
+    height: 200px;
+    background: orangered;
+    border-radius: 50%;
+    position: absolute;
+}
+.sun2 {
+    filter: blur(20px);
+}
+.ring {
+    display: inline-block;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+    border-radius: 50%;
+    animation: rotate 10000ms infinite linear;
+    position: absolute;
+    /* opacity: .5; */
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.mercury {
+    animation: rotate 1500ms infinite linear;
+    width: 400px;
+    height: 400px;
+}
+.mercuryPlanet {
+    background: #888481;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 120px;
+}
+
+.venus {
+    animation: rotate 2500ms infinite linear;
+    width: 500px;
+    height: 500px;
+}
+.venusPlanet {
+    background: #89400e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 150px;
+    left: 468px;
+}
+
+.earth {
+    animation: rotate 3500ms infinite linear;
+    height: 600px;
+    width: 600px;
+}
+.earthPlanet {
+    background: #383e86;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    left: 468px;
+}
+
+.mars {
+    animation: rotate 4500ms infinite linear;
+    height: 700px;
+    width: 700px;
+}
+.marsPlanet {
+    background: #f68e55;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 468px;
+}
+
+.jupiter {
+    animation: rotate 5500ms infinite linear;
+    height: 800px;
+    width: 800px;
+}
+.jupiterPlanet {
+    background: #4d4c45;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 35px;
+    left: 168px;
+}
+
+.saturn {
+    animation: rotate 6500ms infinite linear;
+    height: 900px;
+    width: 900px;
+}
+.saturnPlanet {
+    background: #acac9a;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 795px;
+    left: 168px;
+}
+.saturnRing{
+    width: 55px;
+    height: 55px;
+    /* display: inline-block; */
+    border: 5px solid rgba(167, 126, 235, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.saturnRing2{
+    width: 45px;
+    height: 45px;
+    /* display: inline-block; */
+    border: 5px solid rgba(79, 17, 179, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
